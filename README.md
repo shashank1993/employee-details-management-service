@@ -1,4 +1,6 @@
 # employee-details-management-service
+It is multi module application where employeeRepository will be saving and deleting data from xml file and service will be consuming the employeeRepository.
+
 
 
 ## Running the service locally
