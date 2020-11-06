@@ -39,7 +39,7 @@ public class BasicConfiguration {
     @Autowired
     public IEmployeeDao employeeDao(IMapper<com.peerislands.www.employee.details.domain.dto.Employee, Employees.Employee> employeeDaoMapper,
                                     JAXBContext employeeJaxbContext) {
-        return new EmployeeDao(employeeDaoMapper, employeeJaxbContext, "example.xml");
+        return new EmployeeDao(employeeDaoMapper, employeeJaxbContext, "employee.xml");
     }
 
     @Bean
