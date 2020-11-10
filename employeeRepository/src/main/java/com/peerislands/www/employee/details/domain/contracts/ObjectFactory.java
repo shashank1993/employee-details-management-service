@@ -30,11 +30,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Employee }
+     * Create an instance of {@link Employees }
      * 
      */
-    public Employee createEmployee() {
-        return new Employee();
+    public Employees createEmployees() {
+        return new Employees();
+    }
+
+    /**
+     * Create an instance of {@link Employees.Employee }
+     * 
+     */
+    public Employees.Employee createEmployeesEmployee() {
+        return new Employees.Employee();
     }
 
 }

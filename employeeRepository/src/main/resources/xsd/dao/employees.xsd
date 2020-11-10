@@ -9,6 +9,7 @@
                             <xs:element type="xs:string" name="name"/>
                             <xs:element type="xs:int" name="age"/>
                             <xs:element type="xs:string" name="designation"/>
+                            <xs:element type="xs:string" name="qualification"/>
                             <xs:sequence>
                                 <xs:any maxOccurs="unbounded"/>
                             </xs:sequence>

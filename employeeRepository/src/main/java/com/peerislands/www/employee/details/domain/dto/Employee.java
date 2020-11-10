@@ -8,6 +8,8 @@ public class Employee {
     private String name;
     private int age;
     private String designation;
+    private String qualification;
+
     private List<Object> any;
 
     public long getEmployeeId() {
@@ -46,6 +48,15 @@ public class Employee {
         return this;
     }
 
+    public String getQualification() {
+        return qualification;
+    }
+
+    public Employee setQualification(String qualification) {
+        this.qualification = qualification;
+        return this;
+    }
+
     public List<Object> getAny() {
         return any;
     }
@@ -54,4 +65,6 @@ public class Employee {
         this.any = any;
         return this;
     }
+
+
 }

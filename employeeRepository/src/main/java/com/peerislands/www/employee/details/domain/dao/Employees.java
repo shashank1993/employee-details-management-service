@@ -30,6 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *                   &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;element name="age" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *                   &lt;element name="designation" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *                   &lt;element name="qualification" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *                   &lt;sequence>
  *                     &lt;any maxOccurs="unbounded"/>
  *                   &lt;/sequence>
@@ -99,6 +100,7 @@ public class Employees {
      *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;element name="age" type="{http://www.w3.org/2001/XMLSchema}int"/>
      *         &lt;element name="designation" type="{http://www.w3.org/2001/XMLSchema}string"/>
+     *         &lt;element name="qualification" type="{http://www.w3.org/2001/XMLSchema}string"/>
      *         &lt;sequence>
      *           &lt;any maxOccurs="unbounded"/>
      *         &lt;/sequence>
@@ -116,6 +118,7 @@ public class Employees {
         "name",
         "age",
         "designation",
+        "qualification",
         "any"
     })
     public static class Employee {
@@ -126,6 +129,8 @@ public class Employees {
         protected int age;
         @XmlElement(required = true)
         protected String designation;
+        @XmlElement(required = true)
+        protected String qualification;
         @XmlAnyElement(lax = true)
         protected List<Object> any;
 
@@ -207,6 +212,30 @@ public class Employees {
          */
         public void setDesignation(String value) {
             this.designation = value;
+        }
+
+        /**
+         * Gets the value of the qualification property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link String }
+         *     
+         */
+        public String getQualification() {
+            return qualification;
+        }
+
+        /**
+         * Sets the value of the qualification property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link String }
+         *     
+         */
+        public void setQualification(String value) {
+            this.qualification = value;
         }
 
         /**
